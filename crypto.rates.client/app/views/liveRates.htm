@@ -1,0 +1,10 @@
+<table class="table table-striped table-bordered table-hover">
+    <tbody>
+        <repeat group="{{ @liveRates }}" value="{{ @rate }}">
+            <tr>
+                <th scope="row">{{ @rate->instrument }}</td>
+                <td>{{ @rate->rate }}</td>
+            </tr>
+        </repeat>
+    </tbody>
+</table>

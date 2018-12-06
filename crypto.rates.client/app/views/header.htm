@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ @pageTitle }}</title>
+    
+        <link href="../../vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../vendor/fortawesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="../../app/css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <span id="logo" class="navbar-brand fa fa-btc"></span>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item {{ @activePage=='rates.live' ? 'active' : '' }}"> 
+                    <a class="nav-link" href="/">Live Rates</a>
+                  </li>
+                  <li class="nav-item {{ @activePage=='rates.history' ? 'active' : '' }}">
+                    <a class="nav-link" href="/History">History</a> 
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <main class="container">

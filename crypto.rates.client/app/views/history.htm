@@ -1,0 +1,20 @@
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Symbol</th>
+            <th>Rate</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <repeat group="{{ @historicRates }}" value="{{ @rate }}">
+            <tr>
+                <td>{{ @rate->provider }}</td>
+                <td>{{ @rate->instrument }}</td>
+                <td>{{ @rate->rate }}</td>
+                <td>{{ date("Y-m-d H:i:s", strtotime(@rate->time)) }}</td>
+            </tr>
+        </repeat>
+    </tbody>
+</table>

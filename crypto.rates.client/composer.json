@@ -1,0 +1,16 @@
+{
+    "name": "kobi.kadosh/crypto.rates.client",
+    "description": "This is a web application that displays cryptocurrency rates",
+    "authors": [
+        {
+            "name": "Kobi Kadosh",
+            "email": "kadosh76@leverate.com"
+        }
+    ],
+    "require": {
+        "bcosca/fatfree": "^3.6",
+        "jakeasmith/http_build_url": "^1.0",
+        "twbs/bootstrap": "^4.1",
+        "fortawesome/font-awesome": "^4.7"
+    }
+}

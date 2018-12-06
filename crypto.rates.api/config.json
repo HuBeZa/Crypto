@@ -1,0 +1,16 @@
+{
+  "port": 6582,
+  "save_rates_cron": "0 * * * * *",
+  "providers": {
+    "cryptocompare": {
+      "api_key": "d801c5a0ab2a5c3efd5a814534968db97c3d04dbdaa7bfce010228e2f37da2e1"
+    }
+  },
+  "pairs": [ ["BTC","USD"], ["ETH","USD"], ["LTC","USD"] ],
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "password": "2006Free",
+    "database": "crypto"
+  }
+}
